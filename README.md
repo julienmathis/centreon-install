@@ -1,19 +1,19 @@
-centreon-install
-================
+# centreon-install
+
 
 Centreon autoinstall for Debian (with centreon-engine)
 
-Tested on Debian Wheezy
+Tested on Debian Wheezy with PHP 5.3
 
-# Default install
-## Version and URLs
+## Default install
+### Version and URLs
 - CLIB_VER="1.2.0"
 - CONNECTOR_VER="1.0.2"
-- ENGINE_VER="1.3.7"
+- ENGINE_VER="1.4.6"
 - PLUGIN_VER="2.0.3"
-- BROKER_VER="2.6.2"
-- CENTREON_VER="2.5.1"
-- CLAPI_VER="1.5.2"
+- BROKER_VER="2.6.3"
+- CENTREON_VER="2.5.2"
+- CLAPI_VER="1.6.1"
 
 ## Temp and install directories
 
@@ -30,7 +30,7 @@ Tested on Debian Wheezy
 - CENTREON_USER="centreon"
 - CENTREON_GROUP="centreon"
 
-# Usage
+## Usage
 
  Change your vars at the beginning of the script
 
@@ -38,7 +38,7 @@ Tested on Debian Wheezy
 
         http://localhost/centreon/
 
-# Complete the web install
+## Complete the web install
 
         Monitoring engine                        => centreon-engine
         Centreon Engine directory                => /usr/local/centreon-engine
@@ -48,7 +48,7 @@ Tested on Debian Wheezy
         Centreon Engine Library (*.so) directory => /usr/local/centreon-engine/lib/centreon-engine/
         Embedded Perl initialisation file        =>
 
-# Broker Module Information
+## Broker Module Information
 
         Broker Module                            => centreon-broker
         Centreon Broker etc directory            => /usr/local/centreon-broker/etc
@@ -57,7 +57,11 @@ Tested on Debian Wheezy
         Retention file directory                 => /var/lib/centreon-broker
         Centreon Broker lib (*.so) directory     => /usr/local/centreon-broker/lib/centreon-broker/
 
-# Complete the web wizard
+## Complete the web wizard
 
-# Restart cbd
+## Restart cbd
         service cbd restart
+
+# Roadmap
+
+- installing Centreon 2.x on Debian Wheezy with PHP 5.4 (the standard version)

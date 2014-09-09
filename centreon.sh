@@ -8,21 +8,21 @@
 ## Versions
 CLIB_VER="1.4.0"
 CONNECTOR_VER="1.0.3"
-ENGINE_VER="1.4.4"
+ENGINE_VER="1.4.6"
 PLUGIN_VER="2.0.3"
-BROKER_VER="2.6.2"
-CENTREON_VER="2.5.1"
-CLAPI_VER="1.6.0"
+BROKER_VER="2.6.3"
+CENTREON_VER="2.5.2"
+CLAPI_VER="1.6.1"
 # MariaDB Series
 MARIADB_VER='5.5'
 ## Sources URL
 CLIB_URL="http://download.centreon.com/index.php?id=4318"
 CONNECTOR_URL="http://download.centreon.com/index.php?id=4317"
-ENGINE_URL="http://download.centreon.com/index.php?id=4316"
+ENGINE_URL="http://download.centreon.com/index.php?id=4322"
 PLUGIN_URL="http://www.nagios-plugins.org/download/nagios-plugins-${PLUGIN_VER}.tar.gz"
-BROKER_URL="http://download.centreon.com/index.php?id=4315"
-CENTREON_URL="http://download.centreon.com/index.php?id=4314"
-CLAPI_URL="http://download.centreon.com/index.php?id=4319"
+BROKER_URL="http://download.centreon.com/index.php?id=4323"
+CENTREON_URL="http://download.centreon.com/index.php?id=4320"
+CLAPI_URL="http://download.centreon.com/index.php?id=4596"
 ## Sources widgets
 WIDGET_VER="1.0.0"
 WIDGET_HOST_VER="1.1.2"
@@ -585,7 +585,6 @@ if [[ $? -ne 0 ]];
   else
     echo -e "${bold}Step1${normal}  => Install MariaDB                                       ${STATUS_OK}"
 fi
-
 php3_install >> ${INSTALL_LOG} 2>&1
 if [[ $? -ne 0 ]];
   then
